@@ -7,7 +7,7 @@ parent( bob, ann).
 parent( bob, pat).
 parent( pat, jim).
 
-female( pam).                   % Pam is femal
+female( pam).                   % Pam is female
 male( tom).                     % Tom is male
 male( bob).
 female( liz).
