@@ -1,0 +1,25 @@
+% Exercise 1.1
+
+\begin{itemize}
+    \item[(a)]
+        \begin{verbatim}
+?- parent( jim, X).
+false.
+        \end{verbatim}
+    \item[(b)]
+        \begin{verbatim}
+?- parent( X, jim).
+X = pat.
+        \end{verbatim}
+    \item[(c)]
+        \begin{verbatim}
+?- parent( pam, X), parent( X, pat).
+X = bob.
+        \end{verbatim}
+    \item[(d)]
+        \begin{verbatim}
+?- parent( pam, X), parent( X, Y), parent( Y, jim).
+X = bob,
+Y = pat.
+        \end{verbatim}
+\end{itemize}
