@@ -1,4 +1,3 @@
 # bratko_prolog
 
-Exercises from "Prolog Programming for Artificial Intelligence" (4e) - Ivan Bratko
-
+Exercises and examples using SWI-Prolog from "Prolog Programming for Artificial Intelligence" (4e) - Ivan Bratko

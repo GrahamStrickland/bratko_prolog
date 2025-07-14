@@ -1,53 +1,9 @@
-# Ignore all
-*
+# LaTeX files
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.synctex.gz
 
-# Unignore all with extensions
-!*.*
-
-# Unignore all dirs
-!*/
-
-# IntelliJ files
-*.iml
-*.project
-/venv
-.idea
-
-# VSCode files
+# macOS files
 .DS_Store
-.vs
-*.code-workspace
-*.vscode
-
-# Visual Studio files
-CppProperties.json
-*.vcxproj
-*.vcxproj.*
-*.sln
-\x64
-
-# Eclipse files
-.classpath
-.settings
-
-# CMake files
-cmake-build-debug/
-**/build
-
-# Natvis files
-*.natvis
-
-# Object files and debugging files
-*.o
-*.out
-*.dSYM
-.gdb_history
-
-# Vim files
-tags
-*.swp
-$HOME
-
-# Apple files
-*.icloud
-
