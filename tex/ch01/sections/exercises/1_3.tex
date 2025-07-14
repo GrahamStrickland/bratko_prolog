@@ -1,0 +1,15 @@
+% Exercise 1.3
+
+\begin{itemize}
+    \item[(a)]
+        \begin{verbatim}
+happy( X) :- hasachild( X).
+        \end{verbatim}
+    \item[(b)]
+        \begin{verbatim}
+hastwochildren( X) :-
+    hasachild( X),
+    parent( X, Y),
+    sister( Y, Z).
+        \end{verbatim}
+\end{itemize}

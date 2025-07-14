@@ -29,6 +29,17 @@ sister( X, Y) :-                % X is a sister of Y if
     female( X),                 % X is female and
     X \= Y.                     % X and Y are different
 
+hasachild( X) :- 
+    parent( X, Y).
+
+happy( X) :- 
+    hasachild( X).
+
+hastwochildren( X) :-
+    hasachild( X),
+    parent( X, Y),
+    sister( Y, Z).
+
 ancestor( X, Z) :-              % Rule a1: X is ancestor of Z
     parent( X, Z).
 
