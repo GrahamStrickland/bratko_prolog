@@ -40,6 +40,14 @@ hastwochildren( X) :-
     parent( X, Y),
     sister( Y, Z).
 
+grandchild( X, Z) :-
+    parent( Y, X),
+    parent( Z, Y).
+
+aunt( X, Z) :-
+    parent( Y, Z),
+    sister( Y, X).
+
 ancestor( X, Z) :-              % Rule a1: X is ancestor of Z
     parent( X, Z).
 

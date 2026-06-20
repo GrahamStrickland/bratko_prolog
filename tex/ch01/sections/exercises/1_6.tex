@@ -1,0 +1,40 @@
+% Exercise 1.6
+
+Yes, this is a correct definition of \texttt{ancestor}. In Figure~\ref{fig:ancestor}, we have 
+illustrated this alternative definition. 
+
+\begin{figure}
+    \begin{center}
+        \begin{forest}
+            for tree = {
+                draw, circle, draw=black, fill=none,
+                minimum size=2.2em, inner sep=1pt,
+                edge = {->, line width=1.0pt},
+                l sep = 1.4cm,
+            },
+            [\textbf{X}, name=X,
+                tikz = {
+                    \draw[->, dashed, line width=1.0pt]
+                        (X.south east) to[bend left=20]
+                        node[midway, right] {\footnotesize\bfseries ancestor}
+                        (Z.north east);
+                    \draw[->, line width=1.0pt]
+                        (X.south west) to[bend right=20]
+                        node[midway, left] {\footnotesize\bfseries ancestor}
+                        (Y.north west);
+                },
+                [{},
+                    [\textbf{...}, draw=none,
+                        [\textbf{Y}, name=Y, edge = {->, line width=1.0pt},
+                            [\textbf{Z}, name=Z,
+                                edge label = {node[midway, left] {\footnotesize\bfseries parent}},
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        \end{forest}
+    \end{center}
+    \caption{An alternative recursive definition of the \texttt{ancestor} relation.}
+    \label{fig:ancestor}
+\end{figure}
